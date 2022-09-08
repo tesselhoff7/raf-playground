@@ -1,0 +1,506 @@
+<ngb-accordion #acc="ngbAccordion">
+  <!-- ***
+ADDRESS
+*** -->
+  <ngb-panel id="toggle-1" title="Address">
+    <ng-template ngbPanelContent>
+      <div class="w-100 d-flex flex-row justify-content-between mt-2">
+        <div class="half">
+          <span class="input-label">Region </span>
+
+          <div class="mt-1">
+            <ng-select
+              [multiple]="true"
+              [items]="cars"
+              placeholder="Select"
+              [clearable]="false"
+            >
+              <ng-template ng-label-tmp let-item="item" let-clear="clear">
+                <span class="tag tag-blue">
+                  {{ item.name }}
+
+                  <span
+                    class="tag-icon"
+                    (click)="clear(item)"
+                    aria-hidden="true"
+                  >
+                    ×
+                  </span>
+                </span>
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item.name }}
+              </ng-template>
+            </ng-select>
+          </div>
+        </div>
+
+        <div class="half">
+          <span class="input-label">Exclude State </span>
+
+          <div class="mt-1">
+            <ng-select
+              formControlName="recruiter_ids"
+              [multiple]="true"
+              [items]="cars"
+              bindValue="id"
+              bindLabel="name"
+              placeholder="Select"
+              [clearable]="false"
+            >
+              <ng-template ng-label-tmp let-item="item" let-clear="clear">
+                <span class="tag tag-blue">
+                  {{ item.name }}
+
+                  <span
+                    class="tag-icon"
+                    (click)="clear(item)"
+                    aria-hidden="true"
+                  >
+                    ×
+                  </span>
+                </span>
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item.name }}
+              </ng-template>
+            </ng-select>
+          </div>
+        </div>
+      </div>
+      <div class="w-100 d-flex flex-row justify-content-between mt-2">
+        <div class="half">
+          <span class="input-label">Region </span>
+
+          <div class="mt-1">
+            <ng-select
+              [multiple]="true"
+              [items]="cars"
+              placeholder="Select"
+              [clearable]="false"
+            >
+              <ng-template ng-label-tmp let-item="item" let-clear="clear">
+                <span class="tag tag-blue">
+                  {{ item.name }}
+
+                  <span
+                    class="tag-icon"
+                    (click)="clear(item)"
+                    aria-hidden="true"
+                  >
+                    ×
+                  </span>
+                </span>
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item.name }}
+              </ng-template>
+            </ng-select>
+          </div>
+        </div>
+
+        <div class="half">
+          <span class="input-label">Exclude State </span>
+
+          <div class="mt-1">
+            <ng-select
+              formControlName="recruiter_ids"
+              [multiple]="true"
+              [items]="cars"
+              bindValue="id"
+              bindLabel="name"
+              placeholder="Select"
+              [clearable]="false"
+            >
+              <ng-template ng-label-tmp let-item="item" let-clear="clear">
+                <span class="tag tag-blue">
+                  {{ item.name }}
+
+                  <span
+                    class="tag-icon"
+                    (click)="clear(item)"
+                    aria-hidden="true"
+                  >
+                    ×
+                  </span>
+                </span>
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item.name }}
+              </ng-template>
+            </ng-select>
+          </div>
+        </div>
+      </div>
+      <div class="w-100 d-flex flex-row justify-content-between mt-2">
+        <div class="half">
+          <span class="input-label">Region </span>
+
+          <div class="mt-1">
+            <ng-select
+              [multiple]="true"
+              [items]="cars"
+              placeholder="Select"
+              [clearable]="false"
+            >
+              <ng-template ng-label-tmp let-item="item" let-clear="clear">
+                <span class="tag tag-blue">
+                  {{ item.name }}
+
+                  <span
+                    class="tag-icon"
+                    (click)="clear(item)"
+                    aria-hidden="true"
+                  >
+                    ×
+                  </span>
+                </span>
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item.name }}
+              </ng-template>
+            </ng-select>
+          </div>
+        </div>
+
+        <div class="half">
+          <span class="input-label">Exclude State </span>
+
+          <div class="mt-1">
+            <ng-select
+              formControlName="recruiter_ids"
+              [multiple]="true"
+              [items]="cars"
+              bindValue="id"
+              bindLabel="name"
+              placeholder="Select"
+              [clearable]="false"
+            >
+              <ng-template ng-label-tmp let-item="item" let-clear="clear">
+                <span class="tag tag-blue">
+                  {{ item.name }}
+
+                  <span
+                    class="tag-icon"
+                    (click)="clear(item)"
+                    aria-hidden="true"
+                  >
+                    ×
+                  </span>
+                </span>
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item.name }}
+              </ng-template>
+            </ng-select>
+          </div>
+        </div>
+      </div>
+      <div class="checkbox-name">
+        <span>Address Location</span>
+
+        <div
+          class="d-flex flex-row justify-content-start align-items-center gap-2"
+        >
+          <label for="Home">Home</label>
+          <input class="checkbox-input" type="checkbox" value="" id="Home" />
+
+          <label for="Home">Work</label>
+
+          <input class="checkbox-input" type="checkbox" value="" id="Work" />
+        </div>
+      </div>
+    </ng-template>
+  </ngb-panel>
+
+  <!-- ****
+GENDER 
+**** -->
+
+  <ngb-panel id="gender" title="Gender">
+    <ng-template ngbPanelContent>
+      <div class="w-100 d-flex flex-row justify-content-between mt-2">
+        <div class="half mb-2">
+          <span class="input-label">Gender </span>
+
+          <div class="mt-1">
+            <ng-select
+              [multiple]="true"
+              [items]="cars"
+              placeholder="Select"
+              [clearable]="false"
+            >
+              <ng-template ng-label-tmp let-item="item" let-clear="clear">
+                <span class="tag tag-blue">
+                  {{ item.name }}
+
+                  <span
+                    class="tag-icon"
+                    (click)="clear(item)"
+                    aria-hidden="true"
+                  >
+                    ×
+                  </span>
+                </span>
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item.name }}
+              </ng-template>
+            </ng-select>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-panel>
+
+  <ngb-panel id="toggle-2" title="Age">
+    <ng-template ngbPanelContent>
+      <div class="d-flex flex-row justify-content-start gap-2 mb-2">
+        <div class="age-input">
+          <span class="input-label">From </span>
+          <input
+            formControlName="job_number"
+            type="number"
+            class="form-control"
+          />
+        </div>
+
+        <div class="age-input">
+          <span class="input-label">To </span>
+          <input
+            formControlName="job_title"
+            type="number"
+            class="form-control"
+          />
+        </div>
+      </div>
+    </ng-template>
+  </ngb-panel>
+
+  <ngb-panel id="toggle-3" title="Ethnicity">
+    <ng-template ngbPanelContent>
+      <div class="w-100 d-flex flex-row justify-content-between mt-2">
+        <div class="half mb-2">
+          <span class="input-label">Gender </span>
+
+          <div class="mt-1">
+            <ng-select
+              [multiple]="true"
+              [items]="cars"
+              placeholder="Select"
+              [clearable]="false"
+            >
+              <ng-template ng-label-tmp let-item="item" let-clear="clear">
+                <span class="tag tag-blue">
+                  {{ item.name }}
+
+                  <span
+                    class="tag-icon"
+                    (click)="clear(item)"
+                    aria-hidden="true"
+                  >
+                    ×
+                  </span>
+                </span>
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item.name }}
+              </ng-template>
+            </ng-select>
+          </div>
+        </div>
+        <div class="half mb-2">
+          <span class="input-label">Gender </span>
+
+          <div class="mt-1">
+            <ng-select
+              [multiple]="true"
+              [items]="cars"
+              placeholder="Select"
+              [clearable]="false"
+            >
+              <ng-template ng-label-tmp let-item="item" let-clear="clear">
+                <span class="tag tag-blue">
+                  {{ item.name }}
+
+                  <span
+                    class="tag-icon"
+                    (click)="clear(item)"
+                    aria-hidden="true"
+                  >
+                    ×
+                  </span>
+                </span>
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item.name }}
+              </ng-template>
+            </ng-select>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-panel>
+
+  <ngb-panel id="toggle-4" title="Income">
+    <ng-template ngbPanelContent>
+      <div class="w-100 d-flex flex-row justify-content-between mt-2">
+        <div class="half mb-2">
+          <span class="input-label">Gender </span>
+
+          <div class="mt-1">
+            <ng-select
+              [multiple]="true"
+              [items]="cars"
+              placeholder="Select"
+              [clearable]="false"
+            >
+              <ng-template ng-label-tmp let-item="item" let-clear="clear">
+                <span class="tag tag-blue">
+                  {{ item.name }}
+
+                  <span
+                    class="tag-icon"
+                    (click)="clear(item)"
+                    aria-hidden="true"
+                  >
+                    ×
+                  </span>
+                </span>
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item.name }}
+              </ng-template>
+            </ng-select>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-panel>
+
+  <ngb-panel id="toggle-5" title="Education">
+    <ng-template ngbPanelContent>
+      <div class="w-100 d-flex flex-row justify-content-between mt-2">
+        <div class="half mb-2">
+          <span class="input-label">Gender </span>
+
+          <div class="mt-1">
+            <ng-select
+              [multiple]="true"
+              [items]="cars"
+              placeholder="Select"
+              [clearable]="false"
+            >
+              <ng-template ng-label-tmp let-item="item" let-clear="clear">
+                <span class="tag tag-blue">
+                  {{ item.name }}
+
+                  <span
+                    class="tag-icon"
+                    (click)="clear(item)"
+                    aria-hidden="true"
+                  >
+                    ×
+                  </span>
+                </span>
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item.name }}
+              </ng-template>
+            </ng-select>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-panel>
+
+  <ngb-panel id="toggle-6" title="Marital Status">
+    <ng-template ngbPanelContent>
+      <div class="w-100 d-flex flex-row justify-content-between mt-2">
+        <div class="half mb-2">
+          <span class="input-label">Gender </span>
+
+          <div class="mt-1">
+            <ng-select
+              [multiple]="true"
+              [items]="cars"
+              placeholder="Select"
+              [clearable]="false"
+            >
+              <ng-template ng-label-tmp let-item="item" let-clear="clear">
+                <span class="tag tag-blue">
+                  {{ item.name }}
+
+                  <span
+                    class="tag-icon"
+                    (click)="clear(item)"
+                    aria-hidden="true"
+                  >
+                    ×
+                  </span>
+                </span>
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item.name }}
+              </ng-template>
+            </ng-select>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-panel>
+
+  <ngb-panel id="toggle-7" title="Party">
+    <ng-template ngbPanelContent>
+      <div class="w-100 d-flex flex-row justify-content-between mt-2">
+        <div class="half mb-2">
+          <span class="input-label">Gender </span>
+
+          <div class="mt-1">
+            <ng-select
+              [multiple]="true"
+              [items]="cars"
+              placeholder="Select"
+              [clearable]="false"
+            >
+              <ng-template ng-label-tmp let-item="item" let-clear="clear">
+                <span class="tag tag-blue">
+                  {{ item.name }}
+
+                  <span
+                    class="tag-icon"
+                    (click)="clear(item)"
+                    aria-hidden="true"
+                  >
+                    ×
+                  </span>
+                </span>
+              </ng-template>
+
+              <ng-template ng-option-tmp let-item="item">
+                {{ item.name }}
+              </ng-template>
+            </ng-select>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
+<div class="w-100 d-flex justify-content-end">
+  <button class="btn btn-white">Cancel</button>
+  <button class="btn btn-black">Search</button>
+</div>
+`
